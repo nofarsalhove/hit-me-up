@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@531&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/music_style.css" />
+
+    <title>Hit Me Up</title>
+    <script type="module" src="js/music_main.js"></script>
+  </head>
+
+  <body>
+    <header class="container-fluid">
+      <div class="container center">
+        <div class="title text-center text-white">
+          <h1 class="display-2 mt-5 mt-sm-2">Hit Me Up</h1>
+          <div class="mt-sm-5" id="sub_title">
+            <h2>Listen to music you love and discover new music</h2>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="artists-search container-fluid">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-10 col-sm-8 col-md-5">
+            <div class="input-group mb-3">
+              <label for="search_artist_input" class="d-none"
+                >Search Artist</label
+              >
+              <input
+                type="text"
+                id="search_artist_input"
+                class="form-control border-info search_input text-center"
+                placeholder="Search Artist"
+              />
+              <div class="input-group-append">
+                <button
+                  class="btn border-info"
+                  type="button"
+                  id="search_artist_btn"
+                  style="font-family:Arial, FontAwesome; color:white"
+                >
+                  &#xF002;
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid d-none" id="tracks_op_menu">
+      <div class="container mt-3">
+        <div class="row">
+          <div class="col-8 form-inline">
+            <div class="input-group">
+              <label for="search_track_input" class="d-none"
+                >Search Track</label
+              >
+              <input
+                type="text"
+                id="search_track_input"
+                class="form-control border-info text-light"
+                placeholder="Search Track"
+              />
+            </div>
+          </div>
+          <div class="col-4">
+            <button
+              class="btn border-info text-light float-right"
+              id="sort_btn"
+            >
+              Sort
+              <i
+                class="fa fa-caret-down pl-2"
+                id="id_down"
+                aria-hidden="true"
+              ></i>
+              <i
+                class="fa fa-caret-up d-none"
+                id="id_up"
+                aria-hidden="true"
+              ></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="container-fluid py-4">
+      <div class="container">
+        <div
+          id="err_msg"
+          class="alert alert-danger col-6 text-center d-none"
+        ></div>
+        <div class="row justify-content-between" id="id_parent"></div>
+      </div>
+    </main>
+  </body>
+</html>

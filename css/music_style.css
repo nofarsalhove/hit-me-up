@@ -1,0 +1,109 @@
+/* COMMON */
+.container {
+  min-height: inherit;
+}
+
+.row {
+  min-height: inherit;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* HEADER */
+header {
+  min-height: 250px;
+  background-image: url("https://www.publicdomainpictures.net/pictures/70000/nahled/soundwaves.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: "MuseoModerno", cursive;
+}
+
+@media (max-width: 575.98px) {
+  header h1 {
+    font-size: 4em !important;
+  }
+  header #sub_title {
+    margin-top: 50px;
+  }
+  header #sub_title h2 {
+    font-size: 1.5em;
+  }
+}
+
+.artists-search {
+  background-color: #000;
+}
+
+.input-group .form-control:focus,
+#tracks_op_menu .form-control:focus {
+  box-shadow: none;
+}
+
+#search_artist_input {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#search_artist_btn {
+  background-color: #11c9ee;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#search_artist_btn:hover {
+  opacity: 0.9;
+}
+
+#search_track_input {
+  border-radius: 10px;
+}
+
+#search_track_input,
+#sort_btn {
+  border-radius: 10px;
+  background-color: #11c9ee;
+}
+
+#search_track_input::placeholder {
+  color: white;
+}
+
+#sort_btn:hover {
+  background-color: #41b5cd;
+}
+
+/* MAIN */
+main .alert {
+  margin: 0 auto;
+}
+
+main .card {
+  margin: 0 auto;
+  width: 22rem;
+  box-shadow: 0 0 10px #999;
+  background-color: #f1f3f4;
+}
+
+main audio {
+  width: 250px;
+  display: block;
+}
+
+main .full-album {
+  background-color: #f20089;
+  border-radius: 10px;
+  width: 280px;
+}
+
+main .full-album:hover {
+  opacity: 0.8;
+}
+
+audio {
+  outline: none;
+  border-radius: 20px;
+}
